@@ -24,3 +24,13 @@ Route::delete('/admin/coffee/{coffee_id}/delete', [ApiController::class, 'delete
 
 // API Customer
 Route::post('/registrasi', [ApiController::class, 'register']);
+Route::get('/login', [ApiController::class, 'login']);
+Route::get('/customer/all', [ApiController::class, 'show_customer']);
+
+// API Product
+Route::get('/ez-pz-coffee', [ApiController::class, 'show_products']);
+Route::get('/ez-pz-coffee/{coffee_id}', [ApiController::class, 'detail_product']);
+
+//API Cart
+Route::post('/cart/{coffee_id}', [ApiController::class, 'add_to_cart']);
+Route::get('/payment/success/{customer_id}', [ApiController::class, 'payment_success']);
