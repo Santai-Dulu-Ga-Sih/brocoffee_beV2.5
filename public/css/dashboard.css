@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url(font/GillSans/Gill\ Sans.otf);
+}
+
+@font-face {
+    font-family: 'Gill Sans Bold';
+    src: url(font/GillSans/Gill\ Sans\ Bold.otf);
+}
+
+.dashboard{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/img/Worlds-Best-Minimalist-Cafe-Designs-—-OMOTESANDO-COFFEEE-MAMEYA-HONG-KONG-1200x800.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    width: 35%;
+    height: 100%;
+}
+
+.right{
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+}
+
+#menu__toggle {
+    opacity: 0;
+  }
+  
+#menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+
+  
+.menu__btn {
+    position: fixed;
+    top: 60px;
+    left: 102px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu__btn > span {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+  
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+    right: -4px;
+    width: 150%;
+    display: block;
+    position: absolute;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+  
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+    width: 150%;
+    right: -5px;
+    display: block;
+    position: absolute;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+  
+.menu__box {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #FFFF;
+    transition-duration: .25s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+.menu__box.show{
+    display: block;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #000000;
+    font-family:'Gill Sans';
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+  
+.menu__item:hover {
+    background-color: #FFFF;
+}
+
+@font-face {
+    font-family: 'Gill Sans Medium';
+    src: url(font\GillSans\Gill\_Sans\Medium\_Italic.otf);
+}
+
+.content{
+    width: 100%;
+    position:fixed;
+    display: flex;
+}
+
+.dash-menu-item {
+    color: #4F4F4D;
+    text-decoration: none;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.1em;
+}
+
+.dash-menu{
+    width: 25%;
+    height: 100%;
+    padding-top: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.dash-menu > ul {
+    top: 15%;
+    position: absolute;
+    line-height: 1cm;
+    list-style-type: none;
+    text-align: left;
+}
+
+.dash-menu-item:hover{
+    font-weight: 700;
+    color:#4F4F4D ;
+}
+
+.dash-menu-item.active{
+    font-weight: 700;
+}
+
+.dash-content{
+    width: 50%;
+    height: 100%;
+    left: 52%;
+    text-align: left;
+    position:absolute;
+}
+
+.dash-content-title{
+    display: flex;
+    height: 20%;
+}
+.dash-content-title > h1{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+    top: 50%;
+    position: absolute;
+    top: 17%;
+    margin-top: -25px;
+}
+
+.dash-content-par > p{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+    inline-size: 50%;
+    overflow-wrap: break-word;
+}
+
+.dash-content-order-wrap{
+    display: flex;
+    height: 20%;
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.thorder{
+    padding: 12px;
+    text-align: center;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+
+}
+.tdorder {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+    padding: 12px;
+    text-align: center;
+}
+  
+.button {
+    border: none;
+    color: transparent;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #4F4F4D;
+    border-radius: 10px;
+    justify-content: end;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    float: right;
+    width: 130px;
+    height: 32px
+}
+
+button{
+    color: #fff;
+    background: transparent;
+    border-color: transparent;
+}
+
+.form-wrapper {
+    max-width: 600px;
+    padding-top: 10px;
+  }
+  
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+.form-input {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.2rem;
+    background: transparent;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: #000000;
+  }
+
+.form-group > label{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+}
+  
+#edit-btn {
+    display: block;
+    margin-left: auto;
+    padding: 0.5rem 1.5rem;
+    background: #4F4F4D;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+.checklist{
+    list-style: none;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+    padding-left: 10px;
+}
+
+.checklist input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+.detailakun{
+    width: 100%;
+    height: 100%;
+}
+
+.detailakun td:first-child {
+    width: 100px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+}
+
+.detailakun td:nth-child(2) {
+    padding-left: 100px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #4F4F4D;
+}
+
+.detailakun td{
+    padding-bottom: 20px;
+}
